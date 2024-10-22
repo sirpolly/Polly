@@ -35,7 +35,7 @@ def print_weather(weather_data):
         print(f"Ошибка обработки данных: отсутствует ключ {e}")
 
 def main():
-    api_key = "afb541e1af4ed79ffe4a5d73baf53203"  # Вставьте свой API ключ здесь!
+    api_key = "afb541e1af4ed79ffe4a5d73baf53203"  
     city = input("Введите название города: ")
     while not city.strip():
         print("Ошибка: название города не может быть пустым")
