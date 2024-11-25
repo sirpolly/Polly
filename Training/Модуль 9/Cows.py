@@ -12,18 +12,17 @@ def calculate_milk(stalls):
 
     return total_milk
 
-
 # Запрашиваем ввод у пользователя
-input_stalls = input(
-    "Введите 10 стойл в одну строку. a — свободное стойло, b — занятое: "
-)
+while True:
+    input_stalls = input("Введите 10 стойл в одну строку (a — свободное стойло, b — занятое): ")
 
-# Проверяем правильность введенной строки
-if len(input_stalls) != 10 or any(c not in "ab" for c in input_stalls):
-    print("Ошибка: строка должна содержать ровно 10 символов 'a' или 'b'.")
-else:
-    # Вычисляем общее количество молока
-    produced_milk = calculate_milk(input_stalls)
-
-    # Выводим результат
-    print(f"Произведено молока за день: {produced_milk}")
+    # Проверяем правильность введенной строки
+    if len(input_stalls) == 10 and all(c in "ab" for c in input_stalls):
+        # Вычисляем общее количество молока
+        produced_milk = calculate_milk(input_stalls)
+        
+        # Выводим результат
+        print(f"Произведено молока за день: {produced_milk}л")
+        break
+    else:
+        print("Ошибка: строка должна содержать ровно 10 символов 'a' или 'b'.")
