@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Paul
 - 👀 I’m interested in :girl::girl::girl:
-- 🌱 I’m currently learning Python
+- 🌱 I’m currently learning Python and Lua
 - 💞️ I’m looking to collaborate on :bow:
 - 📫 How to reach me sirpolly@yahoo.com
 - 😄 Pronouns: Just so
